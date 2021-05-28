@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30907.101
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Blackjack", "Blackjack.csproj", "{BCD6FBD6-B63A-483E-AE2E-901A7C87D802}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Blackjack.GameCore", "..\Blackjack.GameCore\Blackjack.GameCore.csproj", "{DD22CA0F-A79F-4B5E-B17B-DEC236240BCD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Blackjack.ConcoleApp", "..\Blackjack.ConcoleApp\Blackjack.ConcoleApp.csproj", "{F97CF62B-D921-4D53-A428-FAA6379F6338}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +13,14 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{BCD6FBD6-B63A-483E-AE2E-901A7C87D802}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{BCD6FBD6-B63A-483E-AE2E-901A7C87D802}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{BCD6FBD6-B63A-483E-AE2E-901A7C87D802}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{BCD6FBD6-B63A-483E-AE2E-901A7C87D802}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DD22CA0F-A79F-4B5E-B17B-DEC236240BCD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD22CA0F-A79F-4B5E-B17B-DEC236240BCD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD22CA0F-A79F-4B5E-B17B-DEC236240BCD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD22CA0F-A79F-4B5E-B17B-DEC236240BCD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F97CF62B-D921-4D53-A428-FAA6379F6338}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F97CF62B-D921-4D53-A428-FAA6379F6338}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F97CF62B-D921-4D53-A428-FAA6379F6338}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F97CF62B-D921-4D53-A428-FAA6379F6338}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

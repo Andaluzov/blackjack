@@ -1,7 +1,7 @@
 ﻿using System;
 
 
-namespace Blackjack.Decks
+namespace Blackjack.GameCore
 {
     public class Deck
     {

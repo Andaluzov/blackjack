@@ -1,8 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 using Blackjack.GameCore;
-
 
 namespace Blackjack.ConcoleApp
 {
@@ -11,13 +8,11 @@ namespace Blackjack.ConcoleApp
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
+            Console.WriteLine("Hello World!");
             const int n = 13;
             Deck deck = new Deck();
 
             Console.WriteLine(deck.GetDeck());
-
         }
-        
-
     }
 }
