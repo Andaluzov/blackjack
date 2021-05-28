@@ -12,7 +12,7 @@ namespace Blackjack.ConcoleApp
             const int n = 13;
             Deck deck = new Deck();
 
-            Console.WriteLine(deck.GetDeck());
+            Console.WriteLine(deck.GetCard());
         }
     }
 }
