@@ -1,7 +1,7 @@
 ﻿using System;
 using Blackjack.GameCore;
 
-namespace Blackjack.ConcoleApp
+namespace Blackjack.ConsoleApp
 {
     class Program
     {

@@ -13,15 +13,15 @@ namespace Blackjack.GameCore
                                      // Height, это значение записывается в поле height.
         }
 
-        public SuitType Suit
-        { }
+        //public SuitType Suit
+        //{ }
 
-        public string Rank
-        {
-            get
-            {
-                return [ЗДЕСЬ БУДЕТ ВАШ КОД];
-            }
-        }
+        //public string Rank
+        //{
+        //    get
+        //    {
+        //        return [ЗДЕСЬ БУДЕТ ВАШ КОД];
+        //    }
+        //}
     }
 }
