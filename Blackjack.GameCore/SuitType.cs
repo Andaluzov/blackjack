@@ -4,14 +4,13 @@ using System.Text;
 
 namespace Blackjack.GameCore
 {
-    class SuitType
+    
+    enum SuitType
     {
-        enum SuitType
-        {
-            Clubs,
-            Diamonds,
-            Hearts,
-            Spades
-        }
-    }    
+        Clubs,
+        Diamonds,
+        Hearts,
+        Spades
+    }
+    
 }
