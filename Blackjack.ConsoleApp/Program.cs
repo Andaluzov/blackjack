@@ -1,5 +1,6 @@
 ﻿using System;
 using Blackjack.GameCore;
+using System.Collections.Generic;
 
 namespace Blackjack.ConsoleApp
 {
