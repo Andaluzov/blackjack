@@ -5,7 +5,7 @@ using System.Text;
 namespace Blackjack.GameCore
 {
     
-    enum SuitType
+    public enum SuitType
     {
         Clubs,
         Diamonds,
