@@ -5,48 +5,29 @@ namespace Blackjack.GameCore
 {
     public class Card
     {
-        public int Value { get; }  //2-14
+        int value;
+        public int Value { get; private set; }
 
-        public SuitType Suit { get; } // масть
+        public SuitType Suit { get; }
 
         public string Rank
         {
             get
             {
-                return GetRank();  // цена карты
+                return [ЗДЕСЬ БУДЕТ ВАШ КОД];
             }
         }
 
-        public Card(int value, SuitType suit)
+        public Card (int value; SuitType suit)
         {
-            Value = value;
-            Suit = suit;
+            Value = this.value;
+            Suit = this.suit
+            
         }
 
         string GetRank()
         {
-            string tempRank = Value.ToString();
-
-            switch (Value)
-            {
-                case 11:
-                    tempRank = " Jack";
-                    break;
-
-                case 12:
-                    tempRank = "Queen";
-                    break;
-
-                case 13:
-                    tempRank = "King";
-                    break;
-
-                case 14:
-                    tempRank = "Ace";
-                    break;
-            }
-            
-            return tempRank;
+            return [jjjj]
         }
     }
 }

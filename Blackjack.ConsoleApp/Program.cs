@@ -9,11 +9,10 @@ namespace Blackjack.ConsoleApp
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
-           
+            Console.WriteLine("Hello World!");
             Deck deck = new Deck();
-            
 
-
+            Console.WriteLine(deck.GetCard());
         }
     }
 }
