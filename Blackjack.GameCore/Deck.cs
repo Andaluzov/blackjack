@@ -14,7 +14,7 @@ namespace Blackjack.GameCore
 
         public Deck()
         {
-            _cards = new List<Card> { };
+            _cards = new List<Card>();
             for (int i = 2; i < 14; i++)
             {
                 _cards.Add(new Card(i, SuitType.Clubs));
@@ -40,8 +40,7 @@ namespace Blackjack.GameCore
         {
             if (_cards.Count == 0)
             {
-                //firstCard = new Card(2, SuitType.Clubs);// уточнить пустую карту
-                firstCard = _cards[_cards.Count]; //последняя карта в списке, если он пустой
+                firstCard = null;
                 return false;
             }
             else

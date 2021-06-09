@@ -26,7 +26,7 @@ namespace Blackjack.GameCore
 
         string GetRank()
         {
-            string tempRank = Value.ToString();
+            string tempRank;
 
             switch (Value)
             {
@@ -44,6 +44,9 @@ namespace Blackjack.GameCore
 
                 case 14:
                     tempRank = "Ace";
+                    break;
+                default:
+                    tempRank = Value.ToString();
                     break;
             }
 
