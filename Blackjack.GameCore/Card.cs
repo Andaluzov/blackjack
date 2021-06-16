@@ -1,27 +1,52 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace Blackjack.GameCore
 {
     public class Card
     {
-        int value;
-        public int Value
-        {
-            get { return value; }   // здесь указываются условие: что возвращает свойство, когда к нему обращаются. В данном случае вернется 
-                                     // значение поля height. Взять значение этого поля извне напрямую мы не можем, тк оно private
-            private set { this.value = value; }  // здесь условие для присвоения значения. В данном случае когда пользователь присваивает значение свойству
-                                     // Height, это значение записывается в поле height.
-        }
+        public int Value { get; }
 
         public SuitType Suit { get; }
 
+        public string Rank
+        {
+            get
+            {
+                return GetRank();  // цена карты
+            }
+        }
 
-        //public string Rank
-        //{
-        //    get
-        //    {
-        //        return [ЗДЕСЬ БУДЕТ ВАШ КОД];
-        //    }
-        //}
+        public Card (int value, SuitType suit)
+        {
+            Value = value;
+            Suit = suit;
+        }
+
+        string GetRank()
+        {
+            string tempRank;
+            int caseSwitch = Value;
+            switch (caseSwitch)
+            {
+                case 11:
+                    tempRank = " Jack";
+                    break;
+                case 12:
+                    tempRank = "Queen";
+                    break;
+                case 13:
+                    tempRank = "King";
+                    break;
+                case 14:
+                    tempRank = "Ace";
+                    break;
+                default:
+                    tempRank = Value.ToString();
+                    break;
+            }
+
+            return tempRank;
+        }
     }
 }

@@ -1,5 +1,6 @@
 ﻿using System;
 using Blackjack.GameCore;
+using System.Collections.Generic;
 
 namespace Blackjack.ConsoleApp
 {
@@ -8,10 +9,9 @@ namespace Blackjack.ConsoleApp
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
-            Console.WriteLine("Hello World!");
+            
             Deck deck = new Deck();
 
-            Console.WriteLine(deck.GetCard());
         }
     }
 }
