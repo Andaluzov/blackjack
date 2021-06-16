@@ -1,21 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
 
-
 namespace Blackjack.GameCore
 {
     public class Deck
     {
-        private List<Card> _cards; // может создать  пустой список? = new List<Card>{}- см строку 17
-
-
-        //{ "2", "3", "4", "5", "6", "7", "8", "9", "10", " Jack", "Queen", "King", "Ace" }
-
+        private List<Card> _cards; 
 
         public Deck()
         {
             _cards = new List<Card>();
-            for (int i = 2; i < 14; i++)
+            for (int i = 2; i < 15; i++)
             {
                 _cards.Add(new Card(i, SuitType.Clubs));
                 _cards.Add(new Card(i, SuitType.Diamonds));

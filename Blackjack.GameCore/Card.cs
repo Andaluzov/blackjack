@@ -21,27 +21,23 @@ namespace Blackjack.GameCore
         {
             Value = value;
             Suit = suit;
-            
         }
 
         string GetRank()
         {
             string tempRank;
-
-            switch (Value)
+            int caseSwitch = Value;
+            switch (caseSwitch)
             {
                 case 11:
                     tempRank = " Jack";
                     break;
-
                 case 12:
                     tempRank = "Queen";
                     break;
-
                 case 13:
                     tempRank = "King";
                     break;
-
                 case 14:
                     tempRank = "Ace";
                     break;
