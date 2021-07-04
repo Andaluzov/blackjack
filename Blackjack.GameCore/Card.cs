@@ -30,7 +30,7 @@ namespace Blackjack.GameCore
             switch (caseSwitch)
             {
                 case 11:
-                    tempRank = " Jack";
+                    tempRank = "Jack";
                     break;
                 case 12:
                     tempRank = "Queen";
