@@ -25,9 +25,12 @@ namespace Blackjack.GameCore.Test
         public void DeckNumberOfCardsTest()    //the number of cards in the deck is correct;
         {            
             Deck deck = new Deck();            
-            int expected = 52;    //numberDeck
-            int actual = deck._cards.Count; //в классе Deck.cs я заменила private List<Card> _cards 
-                                            //на public чтобы был доступен Count 
+            int expected = 52;                 //numberDeck              
+            int actual = 0;
+            while (deck.TryGetCard(out _))
+            {
+                actual++;                
+            }            
             Assert.Equal(expected, actual);
         }
     }
