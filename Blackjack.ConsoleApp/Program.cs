@@ -10,7 +10,7 @@ namespace Blackjack.ConsoleApp
         {
             Console.WriteLine("Hello World!");
             
-            Deck deck = new Deck();
+            //Deck deck = new Deck();
 
         }
     }

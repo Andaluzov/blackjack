@@ -6,7 +6,7 @@ namespace Blackjack.GameCore
     public class Deck
     {
         private List<Card> _cards; 
-
+        
         public Deck()
         {
             _cards = new List<Card>();
