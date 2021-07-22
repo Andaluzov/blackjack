@@ -11,27 +11,21 @@ using System.Text;
 /// </summary>
 namespace Blackjack.GameCore
 {
-    class Hand
+    public class Hand
     {
-        public List<Card> Cards 
-        {
-            get; private set; }
+        public List<Card> Cards {get; private set;}
 
-        public int Points
-        {
-            get => GetPoints(); private set { }
-        }
+        public int Points {get; private set;}
 
         public Hand()
         {
             Cards = new List<Card>();
-             
-
         }
 
         public void AddCard(Card card)
         {
             Cards.Add(card);
+            this.Points = GetPoints();
         }
 
         private int GetPoints()
@@ -39,9 +33,34 @@ namespace Blackjack.GameCore
             int tempRank = 0;
             for (int i = 0; i < Cards.Count; i++)
             {
-                tempRank += +Cards[i].Value;
+                tempRank += GetValue(Cards[i].Value);
+                if (tempRank > 21)
+                {
+                    tempRank -= 10;
+                }
             }
             return tempRank;
+        }
+
+        private int GetValue(int value)
+        {
+            int tempValue = 10;
+            if (value < 11)
+            {
+                tempValue = value;
+            }
+            else
+            {
+                if (value > 10)
+                {
+                    tempValue = 10;
+                }
+            };
+            if (value == 14)
+            {
+                tempValue = 11;
+            };
+            return tempValue;
         }
     }
 }
