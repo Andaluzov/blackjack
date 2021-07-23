@@ -11,7 +11,6 @@ namespace Blackjack.GameCore.Test
         readonly int[] numbers2 = {6, 5, 11};
 
         [Fact]
-
         public void CanGetPoints()
         {
             // Deck deck = new Deck();
