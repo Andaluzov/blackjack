@@ -33,7 +33,7 @@ namespace Blackjack.GameCore
             int tempRank = 0;
             for (int i = 0; i < Cards.Count; i++)
             {
-                tempRank += GetValue(Cards[i].Value);
+                tempRank += GetPointsForRank(Cards[i].Value);
                 if (tempRank > 21)
                 {
                     tempRank -= 10;
@@ -42,25 +42,23 @@ namespace Blackjack.GameCore
             return tempRank;
         }
 
-        private int GetValue(int value)
+        private int GetPointsForRank(int value)
         {
-            int tempValue = 10;
             if (value < 11)
             {
-                tempValue = value;
+                return value;
             }
             else
             {
-                if (value > 10)
+                if (value == 14)
                 {
-                    tempValue = 10;
+                    return 11;
                 }
-            };
-            if (value == 14)
-            {
-                tempValue = 11;
-            };
-            return tempValue;
+                else
+                {
+                    return 10;
+                }
+            }
         }
     }
 }
