@@ -28,7 +28,5 @@ namespace Blackjack.GameCore.Test
             string result = c.Rank;
             Assert.Equal(expected, result);
         }
-
-    }
-    
+    }  
 }
