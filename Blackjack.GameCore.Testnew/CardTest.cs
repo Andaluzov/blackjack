@@ -21,14 +21,11 @@ namespace Blackjack.GameCore.Test
         [InlineData(13, "King")]
         [InlineData(14, "Ace")]
         [InlineData(2, "2")]
-
         public void CanGetRank(int value, string expected) 
         {
             Card c = new Card(value, SuitType.Clubs);
             string result = c.Rank;
             Assert.Equal(expected, result);
         }
-
-    }
-    
+    }  
 }
