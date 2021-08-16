@@ -4,12 +4,9 @@ using System.Text;
 
 namespace Blackjack.GameCore
 {
-        public enum SuitType
+    public enum PlayerAction
     {
-        Clubs,
-        Diamonds,
-        Hearts,
-        Spades
+        Hit,
+        Stay
     }
-    
 }
