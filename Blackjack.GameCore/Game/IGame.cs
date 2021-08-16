@@ -1,10 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using Blackjack.GameCore.Enums;
 
 namespace Blackjack.GameCore.Game
 {
-    interface IGame
+    public interface IGame
     {
         public Deck Deck { get; }
         public Hand DealerHand { get; }

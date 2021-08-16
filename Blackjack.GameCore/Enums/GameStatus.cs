@@ -1,8 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
-namespace Blackjack.GameCore
+namespace Blackjack.GameCore.Enums
 {
     public enum GameStatus
     {
